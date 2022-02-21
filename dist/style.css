@@ -1,0 +1,188 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  font-family: "Oswald", sans-serif;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+#body {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+header {
+  height: 10vh;
+  background-color: transparent;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  gap: 1vw;
+  padding: 2rem;
+}
+header h1 {
+  font-size: 3rem;
+  color: white;
+}
+#form {
+  display: flex;
+  gap: 1vw;
+}
+#form input {
+  height: 4.5vh;
+  outline: none;
+  border: none;
+  width: 25vw;
+}
+#form button {
+  height: 4.5vh;
+  border: none;
+  outline: none;
+  cursor: pointer;
+
+  background-color: transparent;
+  transition: background-color 1s ease-in-out, color 1s ease-in-out;
+}
+#form button:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+}
+.contanier {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 3rem auto;
+  padding: 0.5rem;
+  gap: 2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  -webkit-box-shadow: 0px 0px 41px 5px rgba(0, 0, 0, 0.49);
+  box-shadow: 0px 0px 41px 5px rgba(0, 0, 0, 0.49);
+  transition: background-color 1.5s ease-in-out, color 1.5s ease-in-out,
+    box-shadow 1.5s ease-in-out;
+}
+.contanier:hover {
+  background-color: transparent;
+  color: black;
+  box-shadow: none;
+}
+.wings {
+  display: flex;
+  justify-content: space-between;
+}
+.left {
+  padding: 1rem;
+  text-align: center;
+}
+.right {
+  padding: 1rem;
+  text-align: center;
+}
+.cityName {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.time {
+  font-size: 1rem;
+}
+.state {
+  font-size: 1.5rem;
+}
+.dayIcon {
+  width: 8rem;
+  height: 8rem;
+  margin: 0 auto;
+}
+.temp {
+  font-size: 2rem;
+}
+.extra-informations {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.bottom-part {
+  padding: 1rem;
+}
+.daily {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.daily-day {
+  text-align: center;
+  font-size: 0.7rem;
+}
+.daily-temp {
+  font-size: 1rem;
+}
+
+.cloud {
+  background-image: url("../src/images/cloud.jpg");
+}
+.clear {
+  background-image: url("../src/images/clear-sky.jpg");
+}
+.snow {
+  background-image: url("../src/images/snowy.jpg");
+}
+.thunderstorm {
+  background-image: url("../src/images/thunderstorm.jpg");
+}
+.mist {
+  background-image: url("../src/images/mist.jpg");
+}
+.drizzle {
+  background-image: url("../src/images/drizzle.jpg");
+}
+.rain {
+  background-image: url("../src/images/rain.jpg");
+}
+@media screen and (min-width: 769px) {
+  .daily {
+    gap: 5vw;
+  }
+}
+@media screen and (max-width: 688px) {
+  header h1 {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 420px) {
+  #form {
+    display: block;
+  }
+  #form input {
+    height: 4vh;
+  }
+  #form button {
+    height: 4vh;
+  }
+}
