@@ -17,6 +17,5 @@ window.addEventListener('load',async function () {
     renderPage(responseData)
 })
 export default function initWeb(){
-    switchTemp()
     submitForm()
 }
