@@ -29,6 +29,7 @@ picture {
   display: block;
 }
 #body {
+  animation: Fade 2s ease-in-out;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -184,5 +185,13 @@ header h1 {
   }
   #form button {
     height: 4vh;
+  }
+}
+@keyframes Fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
